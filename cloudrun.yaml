@@ -19,7 +19,7 @@ spec:
     spec:
       containerConcurrency: 7
       timeoutSeconds: 300
-      serviceAccountName: sbgcrun-app-backend@PROJECT_ID.iam.gserviceaccount.com
+      serviceAccountName: sbgcrun-app-backend@sbgcrun-final.iam.gserviceaccount.com
       containers:
       - name: backend
         image: backend
@@ -65,8 +65,8 @@ spec:
       #     - "--health-check"
       #     - "--http-address=0.0.0.0"
       #     - "--http-port=9090"
-      #     # フォーマット: <PROJECT_ID>:<REGION>:<INSTANCE_NAME>
-      #     - "PROJECT_ID:asia-northeast1:sbgcrun-app-instance"
+      #     # フォーマット: <sbgcrun-final>:<REGION>:<INSTANCE_NAME>
+      #     - "sbgcrun-final:asia-northeast1:sbgcrun-app-instance"
       #   resources:
       #     limits:
       #       cpu: 500m
